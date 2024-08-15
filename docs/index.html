@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Visa Agency</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service {
+            width: calc(50% - 1rem);
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .cta button {
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .appointment {
+            margin-bottom: 2rem;
+        }
+
+        .appointment h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .appointment form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .appointment label {
+            margin-bottom: 0.5rem;
+        }
+
+        .appointment input[type="text"],
+        .appointment input[type="email"],
+        .appointment textarea {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .appointment button[type="submit"] {
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quote {
+            margin-bottom: 2rem;
+        }
+
+        .quote h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .quote form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quote label {
+            margin-bottom: 0.5rem;
+        }
+
+        .quote input[type="text"],
+        .quote textarea {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .quote button[type="submit"] {
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+            }
+
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel & Visa Agency</h1>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <img src="images/travel-hero.jpg" alt="Travel Hero Image">
+            <h1>Your Gateway to the World</h1>
+            <p>Explore the world with our expert travel and visa services. We offer a wide range of travel packages, visa assistance, and personalized itineraries to make your dream trip a reality.</p>
+        </section>
+
+        <section class="services">
+            <div class="service">
+                <img src="images/travel-packages.jpg" alt="Travel Packages">
+                <h3>Travel Packages</h3>
+                <p>Discover our curated travel packages designed for every taste and budget. From adventure tours to relaxing beach getaways, we have something for everyone.</p>
+            </div>
+
+            <div class="service">
+                <img src="images/visa-assistance.jpg" alt="Visa Assistance">
+                <h3>Visa Assistance</h3>
+                <p>Simplify your visa application process with our expert guidance. We offer comprehensive visa support, including documentation assistance and application filing.</p>
+            </div>
+
+            <div class="service">
+                <img src="images/personalized-itineraries.jpg" alt="Personalized Itineraries">
+                <h3>Personalized Itineraries</h3>
+                <p>Create your perfect trip with our custom itinerary planning services. Tell us your preferences, and we'll craft a unique travel experience tailored to your needs.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <button>Book Your Trip Now</button>
+        </section>
+
+        <section class="appointment">
+            <h2>Schedule an Appointment</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Schedule Appointment</button>
+            </form>
+        </section>
+
+        <section class="quote">
+            <h2>Request a Quote</h2>
+            <form>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="travel-dates">Travel Dates:</label>
+                <input type="text" id="travel-dates" name="travel-dates">
+
+                <label for="travel-type">Travel Type:</label>
+                <select id="travel-type" name="travel-type">
+                    <option value="vacation">Vacation</option>
+                    <option value="business">Business</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Request Quote</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel & Visa Agency. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add JavaScript for form submissions or other interactions here
+    </script>
+</body>
+</html>
